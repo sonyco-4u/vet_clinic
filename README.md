@@ -132,6 +132,6 @@ If you like this project please give it a star!
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/sonyco-4u/vet_clinic/blob/animals/License) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
