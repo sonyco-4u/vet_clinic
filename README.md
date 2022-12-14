@@ -1,15 +1,31 @@
+<a name="readme-top"></a>
+
+<div align="center">
+
+  <img src="./mirco-readme-logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
+
+</div>
+
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [Documentation](#documentation)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+  - [Install](#install)
   - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -18,69 +34,59 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Vet Clinic] <a name="about-project"></a>
-
-> An database project on PostgreSQL.
-
-**[Vet Clinic]** A database project that involves using PostgreSQL. In this project, I used a relational database to create the data structure for a vet clinic
+# 📖 Vet-clinic first SQL project<a name="about-project"></a>
 
 ## 🛠 Built With <a name="built-with"></a>
 
-- PostgreSQL
-- Github
-- SQL
-- GitFlow
-
-> Database
+### Tech Stack <a name="tech-stack"></a>
 
 <details>
- <details>
-   <summary>Server</summary>
-   <ul>
-     <li>A localhost server created using PSQL</li>
-   </ul>
- </details>
-
- <!-- Features -->
-
-### Key Features <a name="key-features"></a>
-
-- An Animal table containing the following columns: Id, Name, Date of birth, Escape attempts, Neutered, Weight
-
- <p align="right">(<a href="#readme-top">back to top</a>)</p>
+  <summary>Server</summary>
+  <ul>
+    <li><a href=""></a></li>
+  </ul>
+</details>
 
 <!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Project Documentation <a name="documentation"></a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Click here to be amazed!]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
-## 💻 Getting Started <a name="getting-started"></a>
+## Getting Started <a name="getting-started"></a>
 
-This repository includes files with plain SQL that can be used to recreate the VET CLINIC database:
-
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
 
-- PostgreSQL installed
-- A GitHub Account
-- VS Code
+- GitHub access
+- A code editor
 
 ### Setup
 
-- Open PSQL
-- create a new database using CREATE DATABASE Vet Clinic
+## 💻 Getting Started
 
-### Usage
+This repository includes files with plain SQL that can be used to recreate a database:
 
-- connect to database using the command \c Vet Clinic
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- Use [schema.sql](./schema.sql) to create all tables.
+- Use [data.sql](./data.sql) to populate tables with sample data.
+- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
 <!-- AUTHORS -->
 
@@ -96,6 +102,8 @@ In order to run this project you need:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- FUTURE FEATURES -->
+
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
@@ -110,15 +118,13 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project, please give it a star and also follow me on GitHub for future projects
+If you like this project please give it a star!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-- Thumb ups to all the Naija Afrobeat Musicians whose beautiful music made building this project more fun
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,7 +133,5 @@ If you like this project, please give it a star and also follow me on GitHub for
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
