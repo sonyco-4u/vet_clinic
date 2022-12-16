@@ -34,34 +34,38 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Vet-clinic first SQL project<a name="about-project"></a>
+# 📖 [Vet Clinic] <a name="about-project"></a>
+
+> An database project on PostgreSQL.
+
+**[Vet Clinic]** A database project that involves using PostgreSQL. In this project, I used a relational database to create the data structure for a vet clinic
 
 ## 🛠 Built With <a name="built-with"></a>
 
-### Tech Stack <a name="tech-stack"></a>
+- PostgreSQL
+- Github
+- SQL
+- GitFlow
+
+> Database
 
 <details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href=""></a></li>
-  </ul>
-</details>
+ <details>
+   <summary>Server</summary>
+   <ul>
+     <li>A localhost server created using PSQL</li>
+   </ul>
+ </details>
+
+ <!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- An Animal table containing the following columns: Id, Name, Date of birth, Escape attempts, Neutered, Weight
+
+ <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Features -->
-
-### Key Features <a name="key-features"></a>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🚀 Project Documentation <a name="documentation"></a>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Click here to be amazed!]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
