@@ -1,37 +1,75 @@
 /* Database schema to keep the structure of entire database. */
 
-/* Project - create animals table. */
-CREATE DATABASE vet_clinic;
-
 CREATE TABLE animals (
-  id SERIAL PRIMARY KEY,
-  name VARCHAR(255) NOT NULL,
-  date_of_birth DATE,
-  escape_attempts INTEGER,
-  neutered BOOLEAN,
-  weight_kg DECIMAL,
-);
-
-/* Project - query and update animals table */
-ALTER TABLE animals
-ADD species varchar(50);
-
-/* Project - query multiple tables */
-CREATE TABLE owners(
     id INT GENERATED ALWAYS AS IDENTITY,
-    full_name VARCHAR(50),
-    age INT,
-    PRIMARY KEY(id)
-);
-CREATE TABLE species(
+    name VARCHAR(100) NOT NULL,
+    date_of_birth DATE NOT NULL,
+    escape_attempts INT  NOT NULL,
+    nutered BOOLEAN NOT NULL,
+    weight_kg FLOAT NOT NULL);
+ALTER TABLE animals ADD species VARCHAR(100);
+
+CREATE TABLE owners (
     id INT GENERATED ALWAYS AS IDENTITY,
-    name VARCHAR(50),
-    PRIMARY KEY(id)
+    full_name VARCHAR(255) NOT NULL,
+    age INT NOT NULL,
+
+    PRIMARY KEY (id)
 );
 
-\ d animals
+CREATE TABLE species (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    name VARCHAR(255) NOT NULL,
+
+    PRIMARY KEY (id)
+);
+
 ALTER TABLE animals DROP COLUMN species;
-ALTER TABLE animals
-ADD COLUMN species_id INT CONSTRAINT species_fk REFERENCES species (id);
-ALTER TABLE animals
-ADD COLUMN owner_id INT CONSTRAINT owner_fk REFERENCES owners (id);
+
+ALTER TABLE animals ADD COLUMN species_id INT;
+ALTER TABLE animals ADD CONSTRAINT species_fk FOREIGN KEY (species_id) REFERENCES species(id)
+ON DELETE CASCADE;
+
+ALTER TABLE animals ADD COLUMN owner_id INT;
+ALTER TABLE animals ADD CONSTRAINT owner_fk FOREIGN KEY (owner_id) REFERENCES owners(id)
+ON DELETE CASCADE;
+
+
+CREATE TABLE vets(
+    ID INT GENERATED ALWAYS AS IDENTITY,
+    NAME VARCHAR(255) NOT NULL,
+    AGE INT NOT NULL,
+    DATE_OF_GRADUATION DATE NOT NULL,
+
+    PRIMARY KEY (ID)
+);
+
+CREATE TABLE specializations(
+    ID INT GENERATED ALWAYS AS IDENTITY,
+    species_id INT ,
+    vets_id INT,
+
+    CONSTRAINT SPECIES_FOREIGN
+    FOREIGN KEY (species_id)
+    REFERENCES SPECIES(ID),
+
+    CONSTRAINT VETS_FOREIGN
+    FOREIGN KEY (vets_id)
+    REFERENCES VETS(ID)
+
+);
+
+CREATE TABLE VISITS (
+    ID INT GENERATED ALWAYS AS IDENTITY,
+    ANIMALS_ID INT,
+    VETS_ID INT,
+    VISIT_DATE DATE,
+
+    CONSTRAINT ANIMALS_FOREIGN
+    FOREIGN KEY (ANIMALS_ID)
+    REFERENCES ANIMALS(ID),
+
+    CONSTRAINT VETS_FOREIGN
+    FOREIGN KEY (VETS_ID)
+    REFERENCES VETS(ID)
+); 
